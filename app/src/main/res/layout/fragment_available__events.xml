@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/frag"
+    tools:context=".Company.Available_Events">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/message_shape"
+        android:backgroundTint="@color/smoke"
+        android:padding="10dp"
+        android:layout_height="150dp">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/eventcard"
+            android:layout_margin="5dp"
+            android:id="@+id/availableEventRv"
+            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="set Price's Here"
+                android:textColor="@color/navyBlue"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="vertical">
+                    <EditText
+                        android:id="@+id/priceBuffe"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Buffe"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/message_shape"
+                        android:enabled="false"
+                        android:backgroundTint="@color/smoke"
+                        android:allowClickWhenDisabled="false"
+                        android:textColor="@color/blue" />
+
+                    <EditText
+                        android:id="@+id/priceBuffeFasting"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="5dp"
+                        android:allowClickWhenDisabled="false"
+                        android:background="@drawable/message_shape"
+                        android:backgroundTint="@color/smoke"
+                        android:enabled="false"
+                        android:hint="Fasting Buffe"
+                        android:padding="10dp"
+                        android:textColor="@color/blue" />
+
+                    <EditText
+                        android:id="@+id/priceIceCream"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="5dp"
+                        android:allowClickWhenDisabled="false"
+                        android:background="@drawable/message_shape"
+                        android:backgroundTint="@color/smoke"
+                        android:enabled="false"
+                        android:hint="IceCream"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/blue" />
+
+                    <EditText
+                        android:id="@+id/priceDecor"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="5dp"
+                        android:allowClickWhenDisabled="false"
+                        android:background="@drawable/message_shape"
+                        android:backgroundTint="@color/smoke"
+                        android:enabled="false"
+                        android:hint="Decor"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/blue" />
+
+                    <EditText
+                        android:id="@+id/priceBand"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="5dp"
+                        android:allowClickWhenDisabled="false"
+                        android:background="@drawable/message_shape"
+                        android:backgroundTint="@color/smoke"
+                        android:enabled="false"
+                        android:hint="Band"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/blue" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/checkboxDrinksColumn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/priceSoftDrinks"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="5dp"
+                        android:allowClickWhenDisabled="false"
+                        android:background="@drawable/message_shape"
+                        android:enabled="false"
+                        android:hint="SoftDrinks"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/blue"
+                        android:backgroundTint="@color/smoke" />
+
+                    <EditText
+                        android:id="@+id/priceBeer"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="5dp"
+                        android:allowClickWhenDisabled="false"
+                        android:background="@drawable/message_shape"
+                        android:backgroundTint="@color/smoke"
+                        android:enabled="false"
+                        android:hint="Beer"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/blue" />
+
+                    <EditText
+                        android:id="@+id/priceWater"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="5dp"
+                        android:allowClickWhenDisabled="false"
+                        android:background="@drawable/message_shape"
+                        android:backgroundTint="@color/smoke"
+                        android:enabled="false"
+                        android:hint="Water"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/blue" />
+
+                    <EditText
+                        android:id="@+id/priceHotDrinks"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="5dp"
+                        android:allowClickWhenDisabled="false"
+                        android:background="@drawable/message_shape"
+                        android:backgroundTint="@color/smoke"
+                        android:enabled="false"
+                        android:hint="Hot Drinks"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/blue" />
+
+                    <EditText
+                        android:id="@+id/priceSpeaker"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="5dp"
+                        android:allowClickWhenDisabled="false"
+                        android:background="@drawable/message_shape"
+                        android:backgroundTint="@color/smoke"
+                        android:enabled="false"
+                        android:hint="Speaker"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/blue" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/checkboxFoodColumn2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/smoke">
+
+                        <EditText
+                            android:id="@+id/priceEthiopianFood"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="5dp"
+                            android:allowClickWhenDisabled="false"
+                            android:background="@drawable/message_shape"
+                            android:backgroundTint="@color/smoke"
+                            android:enabled="false"
+                            android:hint="Ethioian Food"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/blue" />
+
+                        <EditText
+                            android:id="@+id/priceBirthDaycake"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="5dp"
+                            android:allowClickWhenDisabled="false"
+                            android:background="@drawable/message_shape"
+                            android:backgroundTint="@color/smoke"
+                            android:enabled="false"
+                            android:hint="BirthDay cake"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/blue" />
+
+                        <EditText
+                            android:id="@+id/priceCookies"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="5dp"
+                            android:allowClickWhenDisabled="false"
+                            android:background="@drawable/message_shape"
+                            android:backgroundTint="@color/smoke"
+                            android:enabled="false"
+                            android:hint="Cokies"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/blue" />
+
+                        <EditText
+                            android:id="@+id/priceWeddingCake"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="5dp"
+                            android:allowClickWhenDisabled="false"
+                            android:background="@drawable/message_shape"
+                            android:backgroundTint="@color/smoke"
+                            android:enabled="false"
+                            android:hint="Wedding Cake"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/blue" />
+
+                        <EditText
+                            android:id="@+id/priceStage"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="5dp"
+                            android:allowClickWhenDisabled="false"
+                            android:background="@drawable/message_shape"
+                            android:backgroundTint="@color/smoke"
+                            android:enabled="false"
+                            android:hint="Stage"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/blue" />
+                    </RadioGroup>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/editPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Price"
+                    android:backgroundTint="@color/navyBlue"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="20dp"
+                    android:layout_gravity="center"
+                    android:padding="12dp"/>
+                <Button
+                    android:id="@+id/savePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:backgroundTint="@color/navyBlue"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:padding="12dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Large.Circle"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/mint_green"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/navyBlue"
+            android:src="@drawable/add"
+            />
+    </FrameLayout>
+</LinearLayout>

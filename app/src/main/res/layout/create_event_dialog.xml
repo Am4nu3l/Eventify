@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:visibility="gone"
+    android:id="@+id/imageView"
+    />
+        <Button
+            android:id="@+id/chooseImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/navyBlue"
+            android:text="Choose Image from Gallery" />
+
+        <!-- EditText for size -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"
+            >
+            <EditText
+                android:id="@+id/sizeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/message_shape"
+                android:backgroundTint="@color/smoke"
+                android:layout_weight="1"
+                android:layout_marginVertical="10dp"
+                android:paddingLeft="20dp"
+                android:hint="Size" />
+            <EditText
+                android:id="@+id/pricePerPlate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/message_shape"
+                android:backgroundTint="@color/smoke"
+                android:layout_marginVertical="10dp"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:hint="Price PP/optional" />
+        </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:layout_marginLeft="30dp"
+                />
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:yearListSelectorColor="@color/navyBlue"
+                android:layout_gravity="center_horizontal"
+                />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="Time"
+                />
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/hourfrom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="From"
+                android:layout_marginTop="10dp"
+               android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/message_shape"
+                android:backgroundTint="@color/smoke"
+                android:paddingLeft="20dp"
+                 />
+            <EditText
+                android:id="@+id/hourto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="To"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/message_shape"
+                android:backgroundTint="@color/smoke"
+                android:paddingLeft="20dp"
+                />
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center_vertical"
+    android:layout_marginRight="10dp"
+    >
+   <RadioButton
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/radioAM"
+       android:layout_marginEnd="5dp"
+       android:text="AM"
+       />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioPM"
+        android:text="PM"
+        />
+
+</RadioGroup>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/birthday"
+                    android:clickable="true"
+                    android:id="@+id/img1"
+                    />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/birthday"
+                    android:clickable="true"
+                    android:id="@+id/img2"
+                    />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/birthday"
+                    android:clickable="true"
+                    android:id="@+id/img3"
+                    />
+            </LinearLayout>
+        <EditText
+            android:id="@+id/descriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Description"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/message_shape"
+            android:backgroundTint="@color/smoke"
+            android:paddingLeft="20dp"
+            android:maxLines="10" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            >
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wedding"
+                android:layout_weight="1"
+                android:id="@+id/weddingCheck"
+                android:textColor="@color/blue"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Birthday"
+                android:layout_weight="1"
+                android:id="@+id/birthdayCheck"
+                android:textColor="@color/blue"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            >
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meeting"
+                android:layout_weight="1"
+                android:id="@+id/meetingCheck"
+                android:textColor="@color/blue"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Party"
+                android:id="@+id/partyCheck"
+                android:layout_weight="1"
+                android:textColor="@color/blue"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/eventTimeTextView"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Food's"
+            android:textColor="@color/navyBlue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:orientation="vertical">
+                <RadioGroup
+                    android:id="@+id/checkboxFoodColumn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                     <CheckBox
+                        android:id="@+id/checkBuffe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Buffe"
+                        android:textColor="@color/blue" />
+                    <CheckBox
+                        android:id="@+id/checkBuffeFast"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fasting Buffe"
+                        android:textColor="@color/blue" />
+                    <CheckBox
+                        android:id="@+id/checkIceCream"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ice Cream"
+                        android:textColor="@color/blue" />
+
+                    <CheckBox
+                        android:id="@+id/checkWeddingCake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wedding Cake"
+                        android:textColor="@color/blue" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioGroup
+                    android:id="@+id/checkboxFoodColumn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:id="@+id/checkEthiopianFood"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ethiopian Food"
+                        android:textColor="@color/blue"/>
+
+                    <CheckBox
+                        android:id="@+id/checkBirthDayCake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BirthDay Cake"
+                        android:textColor="@color/blue" />
+                    <CheckBox
+                        android:id="@+id/checkCookies"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cookies"
+                        android:textColor="@color/blue"/>
+                    <CheckBox
+                        android:id="@+id/checkFoodNone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="None"
+                        android:textColor="@color/blue" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/eventTimeTextView"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Drink's"
+            android:textColor="@color/navyBlue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+            <RadioGroup
+                android:id="@+id/checkboxDrinksColumn1"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/checkSoftDrinks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Soft Drinks"
+                    android:textColor="@color/blue"/>
+                <CheckBox
+                    android:id="@+id/checkBeer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beer"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue" />
+
+                <CheckBox
+                    android:id="@+id/checkWater"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Water"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue" />
+            </RadioGroup>
+            <RadioGroup
+                android:id="@+id/checkboxDrinksColumn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/checkHotDrinks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Hot Drinks"
+                    android:textColor="@color/blue"
+                    />
+                <CheckBox
+                    android:id="@+id/checkTraditionalDrink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Traditional Drinks"
+                    android:textColor="@color/blue"/>
+                <CheckBox
+                    android:id="@+id/checkDrinkNone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="None"
+                    android:textColor="@color/blue"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Equipments"
+            android:textColor="@color/navyBlue"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:id="@+id/checkboxEquipmentsColumn1"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/checkSpeaker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Speaker"
+                    android:textColor="@color/blue"/>
+                <CheckBox
+                    android:id="@+id/checkIceStage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stage"
+                    android:textColor="@color/blue"/>
+                <CheckBox
+                    android:id="@+id/checkBand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Band"
+                    android:textColor="@color/blue"/>
+            </RadioGroup>
+            <RadioGroup
+                android:id="@+id/checkboxEquipmentsColumn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/checkDJ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DJ"
+                    android:textColor="@color/blue" />
+                <CheckBox
+                    android:id="@+id/checkTraditionalBand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Traditional Band"
+                    android:textColor="@color/blue" />
+                <CheckBox
+                    android:id="@+id/checkEquipmentNone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="None"
+                    android:textColor="@color/blue"/>
+            </RadioGroup>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/navyBlue"
+                android:layout_gravity="start"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/createButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/navyBlue"
+                android:layout_gravity="end"
+                android:text="Create" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:title="Available Events"
+    android:id="@+id/availableEvents"
+    android:icon="@drawable/event_available"
+    />
+    <item
+        android:title="Booked Events"
+        android:id="@+id/bookedEvents"
+        android:icon="@drawable/booked"
+        />
+</menu>

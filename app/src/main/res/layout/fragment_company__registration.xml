@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/smoke"
+    tools:context=".Entrance.Registration.Company_Registration">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/hotel" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="@color/black"
+                android:text="Service You Provide"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                >
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hotel"
+                    android:id="@+id/checkHotel"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue"
+                    />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Park"
+                    android:layout_weight="1"
+                    android:id="@+id/checkPark"
+                    android:textColor="@color/blue"
+                    />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hall"
+                    android:layout_weight="1"
+                    android:id="@+id/checkHall"
+                    android:textColor="@color/blue"
+                    />
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/smoke"
+                android:background="@drawable/message_shape"
+                android:id="@+id/companyName"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:layout_marginHorizontal="20dp"
+                android:hint="Company Name" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/smoke"
+                android:background="@drawable/message_shape"
+                android:id="@+id/email"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:layout_marginHorizontal="20dp"
+                android:hint="Email" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/smoke"
+                android:layout_weight="1"
+                android:background="@drawable/message_shape"
+                android:id="@+id/phoneNumberOne"
+                android:layout_marginEnd="10dp"
+                android:padding="15dp"
+                android:hint="Phone Number 1" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/smoke"
+                android:background="@drawable/message_shape"
+                android:id="@+id/phoneNumberTwo"
+                android:padding="15dp"
+                android:layout_weight="1"
+                android:hint="Phone Number 2" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/createPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/message_shape"
+                android:backgroundTint="@color/smoke"
+                android:hint="Create Password"
+                android:inputType="textPassword"
+                android:padding="15dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/smoke"
+                android:background="@drawable/message_shape"
+                android:id="@+id/confirmPassword"
+                android:padding="15dp"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:hint="Confirm Password" />
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+            >
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I Agree To The Terms And Conditions"
+                android:id="@+id/termsAndCondition"
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:textColor="@color/blue"
+                />
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="@color/orange"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:text="read First"
+                android:id="@+id/readTerms"
+                />
+        </LinearLayout>
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="Sign Up"
+                android:backgroundTint="@color/navyBlue"
+                android:id="@+id/signUp"
+                app:cornerRadius="10dp"
+                />
+
+        </LinearLayout>
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Large.Circle"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/mint_green"/>
+    </FrameLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Eventify</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="planner"><b>Crafting Unforgettable Moments</b></string>
+    <string name="tips">Your Event Planner at Your Fingertips</string>
+    <string name="don_t_have_an_account_ncreate_your_account"><b>Create your Account</b></string>
+
+    <style name="Theme.Fab_Bottom_app_bar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#0F9D58</item>
+        <item name="colorPrimaryVariant">#0F9D58</item>
+        <item name="colorOnPrimary">#000</item>
+    </style>
+
+    <string name="app_content_description">
+       <string name="about_page_content"><![CDATA[<html>
+    <body>
+        <h1>Welcome to the Event Eventify!</h1>
+
+        <h4>User Registration and Login</h4>
+        <p>New users can register by providing their basic information like name, email, and password. Registered users can log in securely to access the app\'s features and functionalities. The app also provides a password reset option for users who forget their login credentials.</p>
+        <h4>For Event Hosts:</h4>
+        <p>Are you a hall, hotel, or park company looking to showcase your event spaces? Our app provides you with a seamless platform to create and post events with all the necessary details. Share information about your venue, event type, capacity, amenities, and any additional services you offer. With our user-friendly interface, you can easily manage and update your event listings, ensuring potential customers have accurate and up-to-date information.</p>
+
+        <h4>For Event Seekers:</h4>
+        <p>Are you in search of that ideal event space or gathering? Our app allows you to explore a wide range of events posted by various companies, making it easier than ever to find your perfect venue. Search events by date to view upcoming gatherings, ensuring you never miss out on an exciting occasion. Looking for a specific company? Simply search by the company name to quickly find events hosted by your preferred providers.</p>
+        <h4>Effortless Booking Process:</h4>
+        <p>Booking an event has never been simpler. With our app, users can easily browse through event listings, view event details, and make reservations directly within the app. Whether it\'s a wedding, conference, workshop, or party, our app streamlines the booking process, allowing you to secure your spot with just a few taps.</p>
+
+        <p>Wishing you a successful and memorable event planning experience!</p>
+    </body>
+</html>]]></string>
+
+    </string>
+
+
+</resources>

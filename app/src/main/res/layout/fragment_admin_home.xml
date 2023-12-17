@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Admin.AdminHome">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/message_shape"
+                android:backgroundTint="@color/smoke"
+                android:padding="10dp"
+                android:layout_height="150dp">
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="20dp"
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Company"
+                    android:id="@+id/company"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Person"
+                    android:layout_weight="1"
+                    android:id="@+id/person"
+                    android:textColor="@color/blue"
+                    />
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/navyBlue"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:text="Add Banner Image Here"
+                />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/message_shape"
+                android:backgroundTint="@color/smoke"
+                android:layout_height="wrap_content">
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:rowCount="2">
+
+                    <!-- First Row -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_columnWeight="1"
+                        android:src="@drawable/addimg"
+                        android:clickable="true"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/imageOne"
+                        android:padding="8dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_columnWeight="1"
+                        android:layout_marginVertical="10dp"
+                        android:src="@drawable/addimg"
+                        android:scaleType="centerCrop"
+                        android:layout_marginHorizontal="10dp"
+                        android:clickable="true"
+                        android:id="@+id/imageTwo"
+                        android:padding="8dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_columnWeight="1"
+                        android:src="@drawable/addimg"
+                        android:clickable="true"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/imageThree"
+                        android:padding="8dp" />
+
+                    <!-- Second Row -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_columnWeight="1"
+                        android:src="@drawable/addimg"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/imageFour"
+                        android:clickable="true"
+                        android:padding="8dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_columnWeight="1"
+                        android:src="@drawable/addimg"
+                        android:scaleType="centerCrop"
+                        android:clickable="true"
+                        android:id="@+id/imageFive"
+                        android:padding="8dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_columnWeight="1"
+                        android:src="@drawable/addimg"
+                        android:clickable="true"
+                        android:id="@+id/imageSix"
+                        android:scaleType="centerCrop"
+                        android:padding="8dp" />
+
+                </GridLayout>
+                <com.github.ybq.android.spinkit.SpinKitView
+                    android:id="@+id/spin_kit"
+                    style="@style/SpinKitView.Large.Circle"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:SpinKit_Color="@color/mint_green"/>
+            </FrameLayout>
+            <Button
+                android:id="@+id/postBanners"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:backgroundTint="@color/navyBlue"
+                android:text="post banners" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

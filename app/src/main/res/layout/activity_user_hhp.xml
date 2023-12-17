@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/smoke"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/smoke"
+        >
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="43dp"
+            android:id="@+id/more"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="end"
+            android:drawableTop="@drawable/more_vert_24"
+            android:background="@android:color/transparent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/barTitle"
+            android:text="Available Events"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            />
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="43dp"
+            android:drawableTop="@drawable/back2"
+            android:drawableTint="@color/navyBlue"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/back"
+            android:background="@android:color/transparent"
+            android:layout_gravity="start"/>
+    </FrameLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/tabLayout"
+        android:background="@color/smoke"
+        app:tabIndicatorHeight="2dp"
+        app:tabIndicatorGravity="bottom"
+        app:tabIndicatorColor="@color/navyBlue"
+        app:tabTextColor="@color/navyBlue"
+        />
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.viewpager2.widget.ViewPager2>
+
+</LinearLayout>

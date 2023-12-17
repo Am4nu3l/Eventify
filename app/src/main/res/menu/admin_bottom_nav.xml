@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Home"
+        android:id="@+id/adminHome"
+        android:icon="@drawable/home"
+        />
+    <item
+        android:title="Booked Events"
+        android:id="@+id/adminBookedEvents"
+        android:icon="@drawable/booked"
+        />
+    <item
+        android:title="Users"
+        android:id="@+id/adminUsers"
+        android:icon="@drawable/profile"
+        />
+</menu>
